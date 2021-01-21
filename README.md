@@ -23,7 +23,7 @@ yarn run dev
 
 * ### Build the project with
 ```
-yarn run d=build
+yarn run build
 ```
 
 * ### Start the Project with
