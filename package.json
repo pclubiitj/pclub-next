@@ -5,18 +5,27 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write **/*.js *.js"
+    "format": "prettier --write **/*.js *.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "9",
     "next": "latest",
+    "postcss": "7",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "devDependencies": {
-    "autoprefixer": "10.0.2",
-    "postcss": "8.1.7",
-    "prettier": "^2.2.1",
-    "tailwindcss": "^2.0.2"
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-actions": "^6.1.14",
+    "@storybook/addon-essentials": "^6.1.14",
+    "@storybook/addon-links": "^6.1.14",
+    "@storybook/react": "^6.1.14",
+    "babel-loader": "^8.2.2",
+    "prettier": "^2.2.1"
   },
   "license": "MIT"
 }
