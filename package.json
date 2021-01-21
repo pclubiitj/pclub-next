@@ -8,6 +8,7 @@
     "format": "prettier --write **/*.js *.js"
   },
   "dependencies": {
+    "framer-motion": "^3.2.1",
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
