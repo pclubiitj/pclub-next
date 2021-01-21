@@ -3,8 +3,10 @@
 
 ## Steps to setup locally and run:
 
-* ### Install [Node.js](https://nodejs.org/en/download/current/)
-> Deploying this app requires node package manager `npm` 
+* ### Install [yarn](https://yarnpkg.com/en/docs/install)
+> Yarn is a dependency manager built by facebook and google. It is a more efficient and reliable (thanks to yarn.lock) alternative of npm.
+- Launch ``` yarn ``` command in a terminal opened in the project folder.
+> This command will look into the *package.json* file and install all the dependencies listed here.
 
 * ### Clone the repository
 > Download this repository `or`
@@ -13,17 +15,21 @@ git clone https://github.com/pclubiitj/pclub-next.git
 cd pclub-next
 ```
 
-* ### Install the packages with
+* ### Start the development with
 ```
-npm install
-```
-
-* ### Start the project with
-```
-npm run dev
+yarn run dev
 ```
 
 
+* ### Build the project with
+```
+yarn run d=build
+```
+
+* ### Start the Project with
+```
+yarn start
+```
 
 ## Team
 
