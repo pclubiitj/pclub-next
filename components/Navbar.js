@@ -3,13 +3,13 @@ import Logo from "./Logo";
 
 const links = [
   {
-    to: '/',
-    text: 'Home',
+    to: "/",
+    text: "Home",
     privateRoute: false,
   },
   {
-    to: '/About',
-    text: 'About Us',
+    to: "/About",
+    text: "About Us",
     privateRoute: false,
   },
 ];
@@ -25,12 +25,12 @@ export default function Nav() {
           {links.map(({ to, text, privateRoute }) => {
             if (!privateRoute) {
               return (
-                <li key={`${text}`} className='pr-5'>
+                <li key={`${text}`} className="pr-5">
                   <Link href={to} className="no-underline btn-blue ">
-                    <button className="no-underline btn-blue" >{text}</button>
+                    <button className="no-underline btn-blue">{text}</button>
                   </Link>
                 </li>
-              )
+              );
             }
           })}
         </ul>

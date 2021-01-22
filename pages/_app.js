@@ -1,5 +1,5 @@
 import "../styles/index.css";
-import Nav from "../components/Navbar"
+import Nav from "../components/Navbar";
 
 function App({ Component, pageProps }) {
   return (
@@ -7,9 +7,7 @@ function App({ Component, pageProps }) {
       <Nav />
       <Component {...pageProps} />
     </div>
-
-
-  )
+  );
 }
 
 export default App;
