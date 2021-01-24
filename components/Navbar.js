@@ -16,12 +16,12 @@ const links = [
 
 export default function Nav() {
   return (
-    <div class="container mx-auto p-5">
-      <nav class="flex justify-between items-center">
+    <div className="container mx-auto p-5">
+      <nav className="flex justify-between items-center">
         <div>
           <Logo />
         </div>
-        <ul class="flex flex-row">
+        <ul className="flex flex-row">
           {links.map(({ to, text, privateRoute }) => {
             if (!privateRoute) {
               return (
