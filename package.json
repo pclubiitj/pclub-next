@@ -13,7 +13,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "yarn run format && yarn run lint"
+            "pre-commit": "prettier --check . && eslint . --ignore-path .gitignore"
         }
     },
     "dependencies": {
