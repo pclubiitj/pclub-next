@@ -8,8 +8,14 @@
         "lint": "eslint --fix . --ignore-path ./.gitignore",
         "format": "prettier --write **/*.js *.js"
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn run format"
+        }
+    },
     "dependencies": {
         "framer-motion": "^3.2.1",
+        "husky": "^4.3.8",
         "next": "latest",
         "react": "^16.13.1",
         "react-dom": "^16.13.1"
