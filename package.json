@@ -5,14 +5,15 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint --fix . --ignore-path ./.gitignore",
+        "lint": "eslint --fix . --ignore-path .gitignore",
         "format": "prettier --write .",
         "storybook": "start-storybook -p 6006",
-        "storybook:build": "build-storybook"
+        "storybook:build": "build-storybook",
+        "pre-commit": "yarn run format && yarn run lint"
     },
     "husky": {
         "hooks": {
-            "pre-commit": "yarn run format"
+            "pre-commit": "yarn run format && yarn run lint"
         }
     },
     "dependencies": {
@@ -39,7 +40,8 @@
         "eslint-plugin-react-hooks": "^4.2.0",
         "husky": "^4.3.8",
         "postcss-preset-env": "^6.7.0",
-        "prettier": "^2.2.1"
+        "prettier": "^2.2.1",
+        "prop-types": "^15.7.2"
     },
     "license": "MIT"
 }
