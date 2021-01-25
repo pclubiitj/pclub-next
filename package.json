@@ -5,8 +5,9 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint --fix . --ignore-path ./.gitignore",
-        "format": "prettier --write **/*.js *.js"
+        "format": "prettier --write .",
+        "storybook": "start-storybook -p 6006",
+        "storybook:build": "build-storybook"
     },
     "husky": {
         "hooks": {
@@ -14,23 +15,24 @@
         }
     },
     "dependencies": {
+        "@storybook/addon-actions": "^6.1.15",
+        "@storybook/addon-essentials": "^6.1.15",
+        "@storybook/addon-links": "^6.1.15",
+        "@storybook/react": "^6.1.15",
+        "@tailwindcss/postcss7-compat": "^2.0.2",
+        "autoprefixer": "^9",
         "framer-motion": "^3.2.1",
-        "husky": "^4.3.8",
         "next": "latest",
+        "postcss": "^7",
+        "postcss-flexbugs-fixes": "^4",
         "react": "^16.13.1",
-        "react-dom": "^16.13.1"
+        "react-dom": "^16.13.1",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat"
     },
     "devDependencies": {
-        "autoprefixer": "10.0.2",
-        "eslint": "^7.18.0",
-        "eslint-config-prettier": "^7.2.0",
-        "eslint-plugin-jsx-a11y": "^6.4.1",
-        "eslint-plugin-prettier": "^3.3.1",
-        "eslint-plugin-react": "^7.22.0",
-        "eslint-plugin-react-hooks": "^4.2.0",
-        "postcss": "8.1.7",
-        "prettier": "^2.2.1",
-        "tailwindcss": "^2.0.2"
+        "husky": "^4.3.8",
+        "postcss-preset-env": "^6.7.0",
+        "prettier": "^2.2.1"
     },
     "license": "MIT"
 }
