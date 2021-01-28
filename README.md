@@ -2,32 +2,32 @@
 
 ## Steps to setup locally and run:
 
--   ### Install [yarn](https://yarnpkg.com/en/docs/install)
+- ### Install [yarn](https://yarnpkg.com/en/docs/install)
 
-*   Launch `yarn` command in a terminal opened in the project folder.
-    > This command will look into the `yarn.lock` file and install all the dependencies listed here. We are employing `yarn` instead of `npm`, kindly refrain from using `npm` since it will generate `package-lock.json` instead of looking for `yarn.lock`
+* Launch `yarn` command in a terminal opened in the project folder.
+  > This command will look into the `yarn.lock` file and install all the dependencies listed here. We are employing `yarn` instead of `npm`, kindly refrain from using `npm` since it will generate `package-lock.json` instead of looking for `yarn.lock`
 
--   ### Clone the repository
-    > Download this repository `or`
+- ### Clone the repository
+  > Download this repository `or`
 
 ```
 git clone https://github.com/pclubiitj/pclub-next.git
 cd pclub-next
 ```
 
--   ### Start Development Server
+- ### Start Development Server
 
 ```
 yarn run dev
 ```
 
--   ### Build Project
+- ### Build Project
 
 ```
 yarn run build
 ```
 
--   ### Serve Build
+- ### Serve Build
 
 ```
 yarn start

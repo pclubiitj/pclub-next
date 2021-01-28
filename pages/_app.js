@@ -1,20 +1,21 @@
-import '../styles/index.css';
-import Nav from '../components/Navbar';
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+
+import Navbar from "../components/Navbar";
+
+import "../styles/index.scss";
 
 function App({ Component, pageProps }) {
-    console.log(pageProps);
-    return (
-        <div>
-            <Nav />
-            <Component {...pageProps} />
-        </div>
-    );
+	return (
+		<>
+			<Navbar />
+			<Component {...pageProps} />
+		</>
+	);
 }
 
 App.propTypes = {
-    Component: PropTypes.any,
-    pageProps: PropTypes.object
+	Component: PropTypes.any,
+	pageProps: PropTypes.object,
 };
 
 export default App;

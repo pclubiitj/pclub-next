@@ -1,40 +1,32 @@
-import Link from 'next/link';
-import Logo from './Logo';
+import Link from "next/link";
 
 const links = [
-    {
-        to: '/',
-        text: 'Home',
-        privateRoute: false
-    },
-    {
-        to: '/About',
-        text: 'About Us',
-        privateRoute: false
-    }
+	{
+		to: "/",
+		text: "Home",
+	},
+	{
+		to: "/about",
+		text: "About",
+	},
 ];
 
-export default function Nav() {
-    return (
-        <div className="container mx-auto p-5">
-            <nav className="flex justify-between items-center">
-                <div>
-                    <Logo />
-                </div>
-                <ul className="flex flex-row">
-                    {links.map(({ to, text, privateRoute }) => {
-                        if (!privateRoute) {
-                            return (
-                                <li key={`${text}`} className="pr-5">
-                                    <Link href={to} className="no-underline btn-blue ">
-                                        <button className="no-underline btn-blue">{text}</button>
-                                    </Link>
-                                </li>
-                            );
-                        }
-                    })}
-                </ul>
-            </nav>
-        </div>
-    );
+export default function Navbar() {
+	return (
+		<nav className="flex justify-between items-center py-8 px-32">
+			<div>
+				<h1 className="text-2xl font-bold text-gray-800">Programming Club</h1>
+				<h3 className="font-mono font-semibold text-gray-500">IIT Jodhpur</h3>
+			</div>
+			<div className="flex flex-row">
+				{links.map(({ to, text }) => {
+					return (
+						<Link href={to} key={to}>
+							<a>{text}</a>
+						</Link>
+					);
+				})}
+			</div>
+		</nav>
+	);
 }
