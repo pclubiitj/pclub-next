@@ -7,6 +7,9 @@ import "../styles/index.scss";
 function App({ Component, pageProps }) {
 	return (
 		<>
+			<head>
+				<title>Programming Club</title>
+			</head>
 			<Navbar />
 			<Component {...pageProps} />
 		</>
