@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Discord from "../components/Discord";
+import Footer from "../components/Footer";
 
 export default function IndexPage() {
 	return (
@@ -19,7 +20,8 @@ export default function IndexPage() {
 				className="m-4 rounded-xl shadow-md"
 				style={{ height: "20rem" }}
 			/>
-			<Discord dark={true} />
+			<Discord dark={false} />
+			<Footer />
 		</div>
 	);
 }

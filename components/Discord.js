@@ -10,7 +10,7 @@ export default function Discord({ dark }) {
 			frameBorder="0"
 			sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
 			title="discord"
-			className="shadow-md p-4 rounded-lg"
+			className="shadow-md p-4 rounded-lg border-2 border-dashed border-grey-400"
 		/>
 	);
 }

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-
+import Background from "../components/Background";
 import Navbar from "../components/Navbar";
 
 import "../styles/index.scss";
@@ -12,6 +12,7 @@ function App({ Component, pageProps }) {
 			</head>
 			<Navbar />
 			<Component {...pageProps} />
+			<Background />
 		</>
 	);
 }
